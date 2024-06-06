@@ -1,0 +1,42 @@
+# Akamai Client-Side Protect Compliance Script
+
+## Overview
+
+This repository contains a script to interact with the Akamai Client-Side Protect Compliance API, specifically to get PIM (Protect Information Management) configuration event groups. The script uses credentials stored in a file named `creds.txt` to authenticate.
+
+## Prerequisites
+
+- Python 3.x
+- `requests, json and edgegrid` libraries
+- Akamai API credentials
+
+## Usage
+
+To run the script and get the CPC events, use the following command:
+```sh
+python3 fetch_cpc_events.py
+```
+
+## Script Details
+
+The script reads credentials from `creds.txt`, makes a request to the Akamai Client-Side Protect and Compliance API
+
+## Example
+
+Below is an example of the output:
+```
+{
+    "eventGroups": [
+        {
+            "groupId": "12345",
+            "groupName": "Example Event Group",
+            ...
+        },
+        ...
+    ]
+}
+```
+
+## References
+
+For more information on the Akamai Client-Side Protect Compliance API, visit the [official documentation](https://techdocs.akamai.com/client-side-protect-compliance/reference/get-pim-config-event-groups).
