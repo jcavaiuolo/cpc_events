@@ -1,4 +1,5 @@
 import requests, json
+from urllib.parse import urljoin
 from akamai.edgegrid import EdgeGridAuth
 
 def linkmod():
@@ -14,6 +15,7 @@ def linkmod():
     with open('output_file', 'w') as file:
         json.dump(data, file, indent=4)
 
+pimConfigId = 16025 # change as needed
 variables = {}
 
 ## bring data from creds.txt
@@ -32,11 +34,7 @@ s.auth = EdgeGridAuth(
     access_token=variables['access_token']
 )
 
-host = variables['host']
-
-url = f"https://{host}/page-integrity/v1/pim-configs/16025/event-groups"
-
-response = s.get(url)
+response = s.get("".join(["https://",variables['host'], "/page-integrity/v1/pim-configs/",str(pimConfigId),"/event-groups"]))
 
 # print(response.json())
 
