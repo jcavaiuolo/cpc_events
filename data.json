@@ -1,0 +1,91 @@
+{
+  "eventGroups": [
+    {
+      "affectedSessions": 1,
+      "affectedSessionsPercent": 1,
+      "alertTime": null,
+      "destinationDomain": {
+        "domain": "www.akamai-stats.com",
+        "reputation": 83
+      },
+      "eventGroupId": "aeb68d30",
+      "firstSeenTime": "2021-05-24T15:52:53.941Z",
+      "isTest": false,
+      "lastSeenTime": "2021-05-24T15:52:53.941Z",
+      "monitoredSensitiveDataFieldTypes": [
+        "CREDIT_CARD_CARD_HOLDER_NAME",
+        "CREDIT_CARD_CVV",
+        "PII_ADDRESS",
+        "CREDIT_CARD_EXPIRATION_MONTH_YEAR",
+        "CREDENTIALS_USER_NAME",
+        "PII_FIRST_NAME",
+        "PII_ZIP_CODE",
+        "PII_LAST_NAME",
+        "CREDIT_CARD_CREDIT_CARD_NUMBER",
+        "PII_ID_NUMBER"
+      ],
+      "pimConfigId": 4334,
+      "reflectedSensitiveDataFieldTypes": [
+        "CREDIT_CARD_CARD_HOLDER_NAME",
+        "CREDIT_CARD_CVV",
+        "PII_ADDRESS",
+        "CREDIT_CARD_EXPIRATION_MONTH_YEAR",
+        "CREDENTIALS_USER_NAME",
+        "PII_FIRST_NAME",
+        "PII_ZIP_CODE",
+        "PII_LAST_NAME",
+        "CREDIT_CARD_CREDIT_CARD_NUMBER",
+        "PII_ID_NUMBER"
+      ],
+      "severity": "CRITICAL",
+      "sourceDomains": [
+        {
+          "domain": "s3.amazonaws.com",
+          "reputation": 50
+        }
+      ],
+      "suspiciousEventType": "KEYLOGGER",
+      "threatProbability": 94
+    },
+    {
+      "affectedSessions": 1,
+      "affectedSessionsPercent": 2,
+      "alertTime": null,
+      "destinationDomain": {
+        "domain": "www.vakamai-stats.com",
+        "reputation": 94
+      },
+      "eventGroupId": "277e4e51",
+      "firstSeenTime": "2020-12-01T21:34:13.215Z",
+      "isTest": false,
+      "lastSeenTime": "2020-12-01T21:34:13.215Z",
+      "monitoredSensitiveDataFieldTypes": [],
+      "pimConfigId": 4334,
+      "reflectedSensitiveDataFieldTypes": [],
+      "severity": "INFO",
+      "sourceDomains": [],
+      "suspiciousEventType": "LOW_REPUTATION_DOMAIN",
+      "threatProbability": 24
+    },
+    {
+      "affectedSessions": 17,
+      "affectedSessionsPercent": 30,
+      "alertTime": null,
+      "destinationDomain": {
+        "domain": "www.akamai-stats.com",
+        "reputation": 85
+      },
+      "eventGroupId": "74e9631c",
+      "firstSeenTime": "2020-11-07T23:46:14.190Z",
+      "isTest": false,
+      "lastSeenTime": "2021-03-13T01:18:42.699Z",
+      "monitoredSensitiveDataFieldTypes": [],
+      "pimConfigId": 4334,
+      "reflectedSensitiveDataFieldTypes": [],
+      "severity": "INFO",
+      "sourceDomains": [],
+      "suspiciousEventType": "LOW_REPUTATION_DOMAIN",
+      "threatProbability": 22
+    }
+  ]
+}
